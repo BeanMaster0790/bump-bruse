@@ -11,6 +11,11 @@
     src: url("DINPro-Bold_13934.ttf");
 }
 
+@font-face {
+    font-family: "MainFont-slim";
+    src: url("dinpro.otf");
+}
+
 body{
     overflow-x: hidden;
 }
@@ -19,66 +24,70 @@ button{
     border: none;
 }
 
-@media (max-width: 1000px){
 
-    body{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #cd4f14;
-        padding: 50px;
-        text-wrap: nowrap;
-        font-family: "MainFont";
-        height: 100vh;
-    }
+@media (max-width: 1000px) {
 
-    .desktop-img{
-        display: none;
-    }
-    
-    .main-content {
-        display: flex;
-        margin-left: 120px;
-        margin-bottom: 100px;
-    }
-    
-    .product-tagline{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: rotate(90deg);
-        font-size: 25px;
-        margin-left: -260px;
-        margin-top: 115px;
-    }
-    
-    .product-name{
-        transform: rotate(90deg);
-        font-size: 60px;
-        letter-spacing: -8px;
-        line-height: 0.78;
-        color: white;
-    }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #cd4f14;
+    padding: 50px;
+    text-wrap: nowrap;
+    font-family: "MainFont";
+    height: 100vh;
+}
 
-    .product-tagline img{
-        transform: rotate(-90deg);
-        margin-left: 50px;
-        height: 250px;
-        width: auto;
-    }
-    
-    .features {
-        font-size: 25px;
-        margin-top: 60px;
-        list-style: none;
-    }
-    
-    .features li::before {
-    content: "✓";
-    margin-right: 10px;
-    color: #FFFFFF;
-    }
+.desktop-img{
+    display: none;
+}
+
+.main-content {
+    display: flex;
+    margin-left: 70px;
+    margin-bottom: 140px;
+    margin-top: 99px;
+}
+
+.product-tagline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    font-size: 32px;
+    margin-left: -322px;
+    margin-top: 105px;
+}
+
+.product-name{
+    transform: rotate(90deg);
+    font-size: 73px;
+    letter-spacing: -8px;
+    line-height: 0.78;
+    color: white;
+    font-weight: bolder;
+}
+
+.product-tagline img{
+    transform: rotate(-90deg);
+    margin-left: 50px;
+    height: 250px;
+    width: auto;
+}
+
+.features {
+    font-family: "MainFont-slim";
+    font-size: 13px;
+    margin-top: 60px;
+    list-style: none;
+}
+
+.features li::before {
+content: "✓";
+margin-right: 10px;
+color: #FFFFFF;
+}
 }
 
 @media (min-width: 1001px){
@@ -110,9 +119,9 @@ button{
         justify-content: center;
     }
     
-    .product-tagline{
+    .product-tagline {
         font-size: 40px;
-        margin-bottom: -100px;
+        margin-bottom: -65px;
         margin-left: 10px;
     }
     
@@ -124,6 +133,7 @@ button{
     }
     
     .features {
+        font-family: "MainFont-slim";
         font-size: 25px;
         margin-top: 60px;
         list-style: none;
@@ -147,11 +157,15 @@ button{
         <img class="desktop-img" src="image2.png"/> 
         <div class="main-content">
             <div class="product-name">
-                <h1 style="margin-top: 30px;">BUMP&<br> BRUISE</h1>
+                <h1 style="margin-top: -0px;">BUMP&<br> BRUISE</h1>
             </div>
             <div class="product-tagline">
-                <h2>FAST RECOVERY</h2>
-                <img class="mobile-img" src="image2.png"/>
+                <div>
+                    <h2>FAST RECOVERY</h2>
+                </div>
+                <div>
+                    <img class="mobile-img" src="image2.png"/>
+                </div>
             </div>
         </div>
     </div>
